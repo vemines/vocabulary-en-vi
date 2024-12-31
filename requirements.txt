@@ -1,0 +1,6 @@
+google-generativeai
+argparse
+asyncio
+openpyxl
+reportlab
+PyPDF2
