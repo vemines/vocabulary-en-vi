@@ -448,7 +448,7 @@ town	{"noun": ["thị trấn", "thị xã", "thành phố nhỏ"]}
 road	{"noun": ["con đường", "đường đi"]}
 drive	{"verb": ["lái xe", "điều khiển"], "noun": ["sự lái xe", "cuộc đi chơi bằng xe"]}
 arm	{"noun": ["cánh tay", "vũ khí"], "verb": ["trang bị vũ khí"]}
-TRUE	{"adjective": ["đúng", "thật", "chính xác"], "adverb": ["đúng", "thật"], "noun": ["sự thật", "lẽ phải"]}
+true	{"adjective": ["đúng", "thật", "chính xác"], "adverb": ["đúng", "thật"], "noun": ["sự thật", "lẽ phải"]}
 federal	{"adjective": ["liên bang"], "noun": ["người ủng hộ chính quyền liên bang"]}
 break	{"verb": ["làm vỡ", "đập vỡ", "nghỉ"], "noun": ["sự vỡ", "sự gãy", "giờ nghỉ"]}
 difference	{"noun": ["sự khác biệt", "sự chênh lệch"]}
@@ -2229,7 +2229,7 @@ wooden	{"adjective": ["bằng gỗ", "cứng đờ", "vụng về"]}
 preparation	{"noun": ["sự chuẩn bị", "sự sửa soạn", "thuốc được bào chế", "chế phẩm"]}
 aggressive	{"adjective": ["hung hăng", "hiếu chiến", "công kích", "năng nổ", "tháo vát"]}
 concert	{"noun": ["buổi hòa nhạc", "sự phối hợp", "sự nhất trí"]}
-FALSE	{"adjective": ["sai", "nhầm", "giả dối", "không trung thành"]}
+false	{"adjective": ["sai", "nhầm", "giả dối", "không trung thành"]}
 intention	{"noun": ["ý định", "mục đích"]}
 channel	{"noun": ["kênh", "eo biển", "đường", "phương tiện"], "verb": ["đào kênh", "hướng vào", "chuyển vào"]}
 extreme	{"adjective": ["cực độ", "vô cùng", "cực đoan", "quá khích"], "noun": ["thái cực", "cực độ"]}
@@ -10198,7 +10198,7 @@ slay	{"verb": ["giết hại", "tàn sát"]}
 conformity	{"noun": ["sự phù hợp", "sự tuân thủ", "sự khuôn phép"]}
 benevolent	{"adjective": ["nhân từ", "nhân ái", "từ thiện"]}
 coward	{"noun": ["kẻ hèn nhát", "nhát gan"]}
-```briskly	{"adverb": ["nhanh nhẹn", "lanh lẹ", "hoạt bát"]}
+briskly	{"adverb": ["nhanh nhẹn", "lanh lẹ", "hoạt bát"]}
 shaped	{"verb": ["định hình", "nặn", "tạo hình", "làm thành hình"], "adjective": ["có hình dạng", "có dáng"]}
 fabrication	{"noun": ["sự bịa đặt", "sự chế tạo", "sự làm giả"]}
 fearless	{"adjective": ["dũng cảm", "gan dạ", "không sợ hãi"]}

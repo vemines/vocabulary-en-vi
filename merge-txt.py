@@ -2,13 +2,14 @@ import os
 import re
 
 folder_path = './'  # Replace with your folder path
-output_file_path = 'output.txt'  # Output file name
+output_file_path = 'parts.txt'  # Output file name
+exclude_files = ['words.txt', 'requirements.txt']  # Files to exclude from merging
 
 # List all .txt files in the folder
-txt_files = [f for f in os.listdir(folder_path) if f.endswith('.txt') and f != 'words.txt']
+txt_files = [f for f in os.listdir(folder_path) if f.endswith('.txt') and f not in exclude_files]
 
 # Sort files based on the numerical part of the filename (e.g., _part_1.txt, _part_2.txt, ...)
-txt_files.sort(key=lambda x: int(re.search(r'(\d+)', x).group()))
+txt_files.sort(key=lambda x: int(re.search(r'(\d+)', x).group() if re.search(r'(\d+)', x) else 0))
 
 # Open the output file for writing
 with open(output_file_path, 'w', encoding='utf-8') as output_file:

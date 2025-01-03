@@ -448,7 +448,7 @@ town	/taʊn/
 road	/roʊd/
 drive	/draɪv/
 arm	/ɑrm/
-TRUE	/tru/
+true	/tru/
 federal	/ˈfɛdərəl/
 break	/breɪk/
 difference	/ˈdɪfərəns/
@@ -2229,7 +2229,7 @@ wooden	/ˈwʊdn/
 preparation	/ˌprɛpəˈreɪʃən/
 aggressive	/əˈɡrɛsɪv/
 concert	/ˈkɑːnsərt/
-FALSE	/fɔːls/
+false	/fɔːls/
 intention	/ɪnˈtɛnʃən/
 channel	/ˈtʃænəl/
 extreme	/ɪkˈstriːm/
@@ -52496,7 +52496,9 @@ riveter	/ˈrɪvɪtər/
 bi-district	/ˈbaɪˌdɪstrɪkt/
 ex-post	/ˌɛksˈpoʊst/
 higher-skilled	/ˈhaɪərˈskɪld/
-ujamaacountervail	/ˌkaʊntərˈveɪl/
+ujamaa /ˌuːdʒəˈmɑː/
+countervail /ˌkaʊntərˈveɪl/
+langoustine /ˌlɑːŋɡuˈstiːn/
 bi-district /ˌbaɪˈdɪstrɪkt/
 angoustine	/ˌlɑːŋɡuˈstiːn/
 microbot	/ˈmaɪkroʊbɑːt/
