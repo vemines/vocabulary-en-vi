@@ -40,8 +40,8 @@ def create_json_from_data_file(data_file, json_file, word_count=5000):
     with open(json_file, 'w', encoding='utf-8') as f_out:
         json.dump(data, f_out, ensure_ascii=False, indent=4) # Added indent for readability
 
-data_file = "data.txt"
+data_file = "dictionary/data/data.txt"
 json_file = "data.json"
-word_count = 10000
+word_count = 53967   # 53967
 
 create_json_from_data_file(data_file, json_file, word_count)

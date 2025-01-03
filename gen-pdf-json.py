@@ -190,5 +190,5 @@ def split_and_process_json(input_json_file, batch_size=5000):
         print(f"PDF generated for range {start_str}-{end_str}: {output_pdf}")
 
 # Usage
-input_json_file = 'data.json'  # Path to the large input JSON file
+input_json_file = 'dictionary/data/data.json'  # Path to the large input JSON file
 split_and_process_json(input_json_file, batch_size=5000)
