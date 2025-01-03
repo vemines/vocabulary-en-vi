@@ -4,7 +4,7 @@
 
 ## Description
 
-This project uses the Gemini Ai model to translate list of words. It includes functionality to generate International Phonetic Alphabet (IPA) transcriptions and translate it to Vietnamese.
+This project uses the Gemini Ai model to translate list of words. It includes functionality to generate International Phonetic Alphabet (IPA) transcriptions, part of word for learning and translate it to Vietnamese.
 
 ## Features
 
@@ -36,13 +36,15 @@ This project uses the Gemini Ai model to translate list of words. It includes fu
 
 #### [split-line.py](split-line.py): chunk your list file seperate by line. modify filepath, start_line, end_line, lines_per_file base on you purpose.
 
-#### [merge-part.py](merge-part.py): merge all .txt exclude "words.txt" to one file.
+#### [merge-txt.py](merge-txt.py): merge all .txt exclude "words.txt" and "requirements.txt" to one file.
 
-#### [process.py](process.py) input_flie output_file: Load input_file, put text to promt (modify promt type in line 54. "ipa" for generate ipa file. "translate" for translate file), wait gemini response then write to output_file. input_file will be DETELE! \*\* Watchout limit response text from gemini, split file base on this.
+#### [checking.py](checking.py): checking words from 2 file. is word from "words.txt" exist in ex: "parts.txt"
+
+#### [process.py](process.py) input_flie output_file: Load input_file, put text to promt (modify promt type in line 54. "ipa" for generate ipa file. "translate" for translate file). "parts" for generate parts file. Wait gemini response then write to output_file. input_file will be DETELE! \*\* Watchout limit response text from gemini, split file base on this.
 
 #### [process-batch.py](process-batch.py): load all part\_{number}.txt from [split-line.py](split-line.py) file and give [process.py](process.py), inteval after 5 mins (300 seconds).
 
-#### [gen-txt-raw.py](gen-txt-raw.py): Generate txt from raw, input is 3 file [words.txt](dictionary/words/words.txt), [ipa.txt](dictionary/ipa/ipa.txt) and [vi.txt](dictionary/vi/vi.txt). Output [data.txt](dictionary/data/data.txt).
+#### [gen-txt-raw.py](gen-txt-raw.py): Generate txt from raw, input is 4 file [words.txt](dictionary/words/words.txt), [ipa.txt](dictionary/ipa/ipa.txt) and [vi.txt](dictionary/vi/vi.txt). Output [data.txt](dictionary/data/data.txt).
 
 #### [gen-json-txt.py](gen-json-txt.py): Generate json from txt, input is [data.txt](dictionary/data/data.txt) from [gen-txt-raw.py](gen-txt-raw.py). Output [data.json](dictionary/data/data.json).
 

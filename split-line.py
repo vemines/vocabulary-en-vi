@@ -46,7 +46,7 @@ def split_file(filepath, start_line, end_line, lines_per_file):
 # Usage
 filepath = "words.txt"
 start_line = 1
-end_line = 5000
-lines_per_file = 5000
+end_line = 53967
+lines_per_file = 400
 
 split_file(filepath, start_line, end_line, lines_per_file)

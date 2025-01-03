@@ -28,7 +28,7 @@ Input:
 
     For each word, use this format:
 
-    "English Word"<tab>"/IPA Transcription/
+    "English Word"<tab>/IPA Transcription/
 
     <tab> is a literal tab. No extra spaces. Be accurate, complete, and concise.
     - Enclose the IPA transcription within forward slashes (/).
@@ -37,6 +37,22 @@ Input:
 
     Input:
     {text}
+    """
+    elif prompt_type == "parts":
+        return f"""
+You are an expert in English phonetics. Your task is to split each English word in the input into parts based on its pronunciation according to the American phonetics standard. Mark the primary stress within each part using a prime symbol (') placed *before* the stressed syllable.
+
+For each word, use this format:
+Format: English Word<tab>["part1", "part2", ...]
+
+* <tab>: Represents a *literal tab character*.
+* part is split based on syllables and stress. For example, the word "example" is split into ["ex", "'am", "ple"]. word part only, not ipa transcriptions.
+* Be accurate, complete and concise.
+
+Your response should be based on the accurate American phonetic pronunciation of the input words. only word parts with the stress (') symbol.
+
+Input:
+{text}
     """
 
 async def generate_data(text, input_file):
@@ -51,7 +67,7 @@ async def generate_data(text, input_file):
     )
     
     try:
-        response = await model.generate_content_async(get_promt("ipa", text))
+        response = await model.generate_content_async(get_promt("parts", text))
         return response.text
     except Exception as e:
         print(f"Error process {input_file}: {e}")

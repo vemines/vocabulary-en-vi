@@ -48,7 +48,7 @@ def monitor_and_process(directory, check_interval=300):
         last_len = len(part_numbers)  # Update the last known length
 
         # Execute a batch of part files, process the first 10 files in each iteration
-        batch_size = 10
+        batch_size = 7
         execute_batch(part_numbers[:batch_size], directory)
 
         # After processing the batch, wait for the specified interval before checking again
@@ -56,4 +56,4 @@ def monitor_and_process(directory, check_interval=300):
         time.sleep(check_interval)
 
 directory = '.'  # Directory target
-monitor_and_process(directory, 300)
+monitor_and_process(directory, 150)
