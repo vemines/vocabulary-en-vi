@@ -80,6 +80,6 @@ def create_excel_from_json(json_file, excel_file):
 
 # Example usage
 json_file = "dictionary/data/data.json"
-excel_file = "data.xlsx"
+excel_file = "dictionary/data/data.xlsx"
 
 create_excel_from_json(json_file, excel_file)

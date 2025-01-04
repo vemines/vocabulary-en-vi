@@ -2,7 +2,7 @@ import os
 import re
 
 folder_path = './'  # Replace with your folder path
-output_file_path = 'parts.txt'  # Output file name
+output_file_path = 'vi.txt'  # Output file name
 exclude_files = ['words.txt', 'requirements.txt']  # Files to exclude from merging
 
 # List all .txt files in the folder

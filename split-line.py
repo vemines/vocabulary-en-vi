@@ -44,9 +44,9 @@ def split_file(filepath, start_line, end_line, lines_per_file):
         print(f"Error: File '{filepath}' not found.")
 
 # Usage
-filepath = "words.txt"
+filepath = "dictionary/words.txt"
 start_line = 1
 end_line = 53967
-lines_per_file = 400
+lines_per_file = 200
 
 split_file(filepath, start_line, end_line, lines_per_file)

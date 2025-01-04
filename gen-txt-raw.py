@@ -76,10 +76,10 @@ def create_data(ipa_file, vi_file, words_file, parts_file, output_file):
                 if word not in parts_data:
                     print(f"Word '{word}' not found in parts file")
 # Usage:
-ipa_file = "ipa.txt"  # Your ipa file names
-vi_file = "vi.txt"    # Your translate file names
-words_file = "words.txt"    # Your words file names
-parts_file = "parts.txt"    # Your parts file names
-output_file = "data.txt"    # Your output file names
+ipa_file = "dictionary/ipa.txt"  # Your ipa file names
+vi_file = "dictionary/vi.txt"    # Your translate file names
+words_file = "dictionary/words.txt"    # Your words file names
+parts_file = "dictionary/parts.txt"    # Your parts file names
+output_file = "dictionary/data/data.txt"    # Your output file names
 
 create_data(ipa_file, vi_file, words_file,parts_file, output_file)

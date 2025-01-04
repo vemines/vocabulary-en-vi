@@ -38,10 +38,10 @@ def create_json_from_data_file(data_file, json_file, word_count=5000):
                 print(f"Error in {data_file} at line {line_num}: Invalid format - '{line.strip()}'")
 
     with open(json_file, 'w', encoding='utf-8') as f_out:
-        json.dump(data, f_out, ensure_ascii=False, indent=4) # Added indent for readability
+        json.dump(data, f_out, ensure_ascii=False, separators=(',', ':'))
 
 data_file = "dictionary/data/data.txt"
-json_file = "data.json"
-word_count = 53967   # 53967
+json_file = "dictionary/data/data_10k.json"
+word_count = 53966   # 53966
 
 create_json_from_data_file(data_file, json_file, word_count)
