@@ -41,7 +41,7 @@ def create_json_from_data_file(data_file, json_file, word_count=5000):
         json.dump(data, f_out, ensure_ascii=False, separators=(',', ':'))
 
 data_file = "dictionary/data/data.txt"
-json_file = "dictionary/data/data_10k.json"
+json_file = "dictionary/data/data.json"
 word_count = 53966   # 53966
 
 create_json_from_data_file(data_file, json_file, word_count)

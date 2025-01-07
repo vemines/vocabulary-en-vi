@@ -8,16 +8,25 @@ genai.configure(api_key="YOUR_API_KEY")  # Replace with your actual API key
 # prompt_type == 
 #   "translate" for translate task, 
 #   "ipa" for IPA task
+#   "parts" for IPA task
 def get_promt(prompt_type, text):
     # Define both prompt templates
     if prompt_type == "translate":
        return f"""
-Translate the following English words into Vietnamese, providing ALL common meanings for EACH part of speech. I need score it each meaning 1 -> 10, if < 5 remove meaning, if part_of_speech empty remove part_of_speech. Make sure after tab is valid JSON string.
+You are a helpful translation bot. A user will provide an English word. You need to translate that word into Vietnamese, identify its common English parts of speech, and provide a list of the most relevant meanings for each part of speech in Vietnamese.
 
-Format: English Word<tab>\\t{{"part_of_speech_1": ["meaning 1", "meaning 2", ...], "part_of_speech_2": ["meaning 1", "meaning 2", ...], ...}}
+The output should be formatted as follows:
 
-\\t is a literal tab. No extra spaces. The right side of the tab must be a valid JSON string. Be accurate, complete, and concise.
-No add score after meaning
+`<word>\t{{"<pos1>": ["<meaning1>", "<meaning2>", ...], "<pos2>": ["<meaning3>", ...], ...}}`
+
+Where:
+- `<word>` is the input English word.
+- `\\t` represents a tab character.
+- The output after \t is a JSON object.
+- `<pos1>`, `<pos2>`, etc., are the English parts of speech (e.g., "noun", "verb").
+- The values for each part of speech are lists of the most common and relevant Vietnamese meanings of the word when used as that part of speech.
+
+Focus on providing the most common and direct translations, similar to how Google Translate presents its top results. Avoid less common or overly nuanced meanings unless they are very frequently encountered.
 
 Input:
 {text}

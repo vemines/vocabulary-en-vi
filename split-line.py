@@ -46,7 +46,7 @@ def split_file(filepath, start_line, end_line, lines_per_file):
 # Usage
 filepath = "dictionary/words.txt"
 start_line = 1
-end_line = 53967
-lines_per_file = 200
+end_line = 53966 #53966
+lines_per_file = 230
 
 split_file(filepath, start_line, end_line, lines_per_file)
